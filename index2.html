@@ -1,0 +1,294 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="imagens/ico/03.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <title>APOSTILAS PARA OS ESTUDOS </title>
+    <link rel="stylesheet" href="estilo2.css">
+
+    <style>
+        /* Estilos para o mural de avisos */
+        .mural {
+            background-color: white;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .mural h1 {
+            margin-top: 0;
+        }
+        .mural p {
+            font-size: 1.2em;
+        }
+        .mural ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+        .mural li {
+            margin: 10px 0;
+            border: none;
+            text-transform: none;
+            list-style: none;
+        }
+        /* Estilos gerais para li fora do mural */
+        li {
+            text-transform: uppercase;
+        }
+        /* Estilos para o link destacado */
+        .highlight-link {
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .highlight-link img {
+            width: 90px; /* Ajuste conforme necessário */
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .highlight-link img:hover {
+            transform: scale(1.1);
+        }
+
+        a {
+            color: orange; /* Define a cor do link como laranja */
+            text-decoration: none; /* Remove o sublinhado padrão do link */
+        }
+        a:hover {
+            text-decoration: underline; /* Adiciona sublinhado quando o link é hover */
+        }
+       
+/* Estilos gerais do rodapé */
+footer {
+    background-color: #002D42;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    
+    flex: 1;
+    margin:0px;
+    padding: 20px;
+}
+
+.footer-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    line-height: 1.6;
+}
+
+.contact span {
+    display: block;
+    margin: 10px 0;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.socials a:hover {
+    color: #ddd;
+}
+
+.footer-bottom {
+    
+    margin-top: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ddd;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section h2 {
+        font-size: 1.2em;
+    }
+
+    .footer-section p {
+        font-size: 0.9em;
+    }
+
+    .socials a {
+        margin: 0 5px;
+    }
+
+    .footer-bottom {
+        font-size: 0.8em;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagens/logo-cecierj.png" alt="CECIERJ">
+        </div>
+        <button class="menu-toggle" id="menu-toggle">
+            &#9776; <!-- Ícone de hamburger -->
+        </button>
+        <nav>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">CEJA-SG</a></li>
+                <li class="dropdown">
+                    <a href="#">Médio</a>
+                    <ul class="submenu">
+                        <li><a href="artesmed.html">Artes</a></li>
+                        <li><a href="biologia.html">Biologia</a></li>
+                        <li><a href="edfisicamed.html">Educação Física</a></li>
+                        <li><a href="filosofia.html">Filosofia</a></li>
+                        <li><a href="fisica.html">Física</a></li>
+                        <li><a href="geomed.html">Geografia</a></li>
+                        <li><a href="histmed.html">História</a></li>
+                        <li><a href="ingmed.html">Inglês</a></li>
+                        <li><a href="matmed.html" target="_blank">Matemática</a></li>
+                        <li><a href="portmed.html">Português</a></li>
+                        <li><a href="quimica.html">Química</a></li>
+                        <li><a href="sociologia.html">Sociologia</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Fundamental</a>
+                    <ul class="submenu">
+                        <li><a href="artes-ef.html">Artes</a></li>
+                        <li><a href="ciencias.html">Ciências</a></li>
+                        <li><a href="ed.fund.html">Educação Física</a></li>
+                        <li><a href="geo.fund.html">Geografia</a></li>
+                        <li><a href="hist-ef.html">História</a></li>
+                        <li><a href="ing-ef.html">Inglês</a></li>
+                        <li><a href="mat-ef.html">Matemática</a></li>
+                        <li><a href="por-ef.html">Português</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Contato</a>
+                    <ul class="submenu">
+                        <li><a href="mailto:cejasaogoncalo.adm@gmail.com">Email</a></li>
+                        <li><a href="#">Telefone</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Mural de Avisos -->
+        <div class="mural">
+            <h1>Mural de Avisos</h1>
+            <p>Bem-vindo ao nosso mural de avisos!</p>
+            <p>Aqui você encontrará todas as informações importantes e atualizações.</p>
+           
+            <p><b>Horários de Atendimento Secretaria</b></p>
+            <p>Matrícula de Segunda a Quinta das 09:00 às 17:00</p>
+            <p>Documentos necessários originais</p>
+            <ul>
+                <li>Carteira de Identidade (RG) e CPF ou Carteira de Identidade Nacional.</li>
+                <li>Comprovante de residência atualizado</li>
+                <li>Histórico Escolar ou declaração de escolaridade ou comprovação de aproveitamento do ENCCEJA.</li>
+                <li>Certidão de Nascimento ou Casamento</li>
+<p>
+    Quem está fora da idade escolar e deseja concluir os ensinos Fundamental e Médio já pode se inscrever na Rede CEJA – Centro de Educação de Jovens e Adultos. A matrícula está aberta para novos alunos e o processo é totalmente online e gratuito. A primeira etapa consiste na pré-matrícula que deve ser feita no site <a href="https://sca.cecierj.edu.br/scc/prealuno/preMatricula/" target="_blank">Clique aqui para a pre-matrícula</a>
+</p>
+
+<P>Após a pré-matrícula, vá a unidade e leve os documentos necessários para confirmar sua matricula e ser orientado por um de nossos professores.</P>
+
+<P>
+    DE TERÇA A QUINTA DAS 09 AS 17:00h SEXTA DAS 09 AS 16:00h
+</P>
+
+<P> <b>Nosso endereço</b> </P>
+<b>RUA PROCÓPIO FERREIRA, VILA LAGE, SN  CIEP 247</b>
+                <p> O aluno conta ainda um ambiente virtual de aprendizagem conhecido como CEJA Virtual.La se encontram sua notas e demais coisas para seus estudos. Neste ambiente, o aluno poderá encontrar outros recursos e materiais que podem ajudá-lo na sua aprendizagem. Quer saber mais? Acesse(<strong>cejarj.cecierj.edu.br/ava</strong>) clicando no botão abaixo. OBS.  <b> o login e senha é o número de sua Matrícula.</b></p> 
+            </ul>
+            <a href="https://cejarj.cecierj.edu.br/ava" class="highlight-link" target="_blank">
+                <img src="imagens/clique-aqui.png.jpg" alt="Clique aqui">
+            </a>
+        </div> 
+    
+
+        <!-- Conteúdo principal do site -->
+        
+    </main>
+
+    <footer>
+        <!-- Rodapé do site -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2 class="logo-text">CEJA-SG</h2>
+                    <p>
+                        O Centro de Educação de Jovens e Adultos de São Gonçalo oferece ensino fundamental e médio com qualidade e flexibilidade para jovens e adultos fora da idade escolar.
+                    </p>
+                    <div class="contact">
+                        <span><i class="fas fa-phone"></i> &nbsp; (21) 2725-9025</span>
+                        <span><i class="fas fa-envelope"></i> &nbsp; cejasaogoncalo.adm@gmail.com</span>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/ceja.sg/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 CEJA-SG | Designed by Well
+            </div>
+        </footer>
+        
+   </footer>
+    <script src="script2.js"></script>
+    <div class="whatsapp-button">
+        <a href="https://api.whatsapp.com/send?phone=5521989497554&text=Olá,%20preciso%20de%20ajuda" target="_blank">
+            <img src="imagens/whatsapp.png" alt="WhatsApp">
+        </a>
+    </div>
+</body>
+</html>
