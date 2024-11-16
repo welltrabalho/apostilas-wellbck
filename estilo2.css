@@ -148,3 +148,56 @@ footer {
     width: 60px; /* Ajuste conforme necessário */
     height: auto;
 }
+
+
+/* QUADRO DE HORÁRIOS */
+
+#schedule-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+}
+
+#schedule-container h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.subjects {
+    list-style: none;
+    padding: 0;
+}
+
+.subjects li {
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+.subjects li:hover {
+    background-color: #f0f0f0;
+}
+
+#tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+    display: none;
+}
+
+.hidden {
+    display: none !important;
+}

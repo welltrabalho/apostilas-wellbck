@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: #002D42;
     color: #fff;
     padding: 10px 0;
 }
@@ -250,7 +250,7 @@ body {
 .alerta{
     text-align: center;
     display: flexbox;
-    background-color: #005E81;
+    background-color: #002D42;
     border-radius: 20px;
     color: #fff;
     
