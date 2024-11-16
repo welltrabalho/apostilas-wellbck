@@ -252,10 +252,129 @@ footer {
                 <img src="imagens/clique-aqui.png.jpg" alt="Clique aqui">
             </a>
         </div> 
-    
-
         <!-- Conteúdo principal do site -->
-        
+        <!--Quadro de hoprario adicinado 16/11/204-->
+          <!-- Quadro de Horário -->
+    <div class="schedule-container">
+        <h2>Quadro de Horário</h2>
+        <div class="schedule-grid">
+            <div class="subject" data-professor="Prof. Marcelo/   Prof. Patricia" data-horario="MARCELO Segunda, 9:50h as 15:30h PATRÍCIA, 15:30h as 20:30h">Matemática</div>
+            <div class="subject" data-professor="Profª Oliveira" data-horario="Terça, 14h">Português</div>
+            <div class="subject" data-professor="Prof. Souza" data-horario="Quarta, 16h">História</div>
+            <div class="subject" data-professor="Profª Lima" data-horario="Quinta, 9h">Geografia</div>
+            <div class="subject" data-professor="Prof. Carvalho" data-horario="Sexta, 11h">Ciências</div>
+        </div>
+    </div>
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+        <h3 id="popup-title">Matéria</h3>
+        <p id="popup-professor">Professor:</p>
+        <p id="popup-horario">Horário:</p>
+        <button class="close-btn" onclick="closePopup()">Fechar</button>
+    </div>
+</main>
+
+<script>
+    // Seleciona todas as matérias
+    const subjects = document.querySelectorAll('.subject');
+    const popup = document.getElementById('popup');
+    const popupTitle = document.getElementById('popup-title');
+    const popupProfessor = document.getElementById('popup-professor');
+    const popupHorario = document.getElementById('popup-horario');
+
+    // Adiciona evento de clique em cada matéria
+    subjects.forEach(subject => {
+        subject.addEventListener('click', () => {
+            const professor = subject.getAttribute('data-professor');
+            const horario = subject.getAttribute('data-horario');
+            popupTitle.textContent = subject.textContent;
+            popupProfessor.textContent = `Professor: ${professor}`;
+            popupHorario.textContent = `Horário: ${horario}`;
+            popup.style.display = 'block';
+        });
+    });
+
+    // Fecha o popup
+    function closePopup() {
+        popup.style.display = 'none';
+    }
+</script>
+
+<style>
+    /* Quadro de horário */
+    .schedule-container {
+        width: 80%;
+        max-width: 600px;
+        margin: 20px auto;
+        text-align: center;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .schedule-container h2 {
+        margin-bottom: 20px;
+    }
+
+    .schedule-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+    }
+
+    .subject {
+        padding: 15px;
+        background: #007bff;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+
+    .subject:hover {
+        transform: scale(1.05);
+        background: #0056b3;
+    }
+
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        width: 300px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+    }
+
+    .popup h3 {
+        margin: 0 0 10px;
+    }
+
+    .popup p {
+        margin: 5px 0;
+    }
+
+    .close-btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: #dc3545;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .close-btn:hover {
+        background: #a71d2a;
+    }
+</style>
     </main>
     <footer>
         <!-- Rodapé do site -->
@@ -289,6 +408,5 @@ footer {
     </div>
     
 </body>
-
 </html>
 
