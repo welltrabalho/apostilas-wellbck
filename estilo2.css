@@ -201,3 +201,32 @@ footer {
 .hidden {
     display: none !important;
 }
+
+/* novo quadro de horio */
+
+.schedule-container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule-table th, .schedule-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.schedule-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
