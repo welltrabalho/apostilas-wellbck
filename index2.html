@@ -376,6 +376,247 @@ footer {
     }
 </style>
     </main>
+
+ <!--novo quadro de horario -->
+
+ <div class="schedule-container">
+    <h2>PORTUGUÊS</h2>
+    <table class="schedule-table">
+        <thead>
+            <tr>
+                <th>Horário</th>
+                <th>Segunda</th>
+                <th>Terça</th>
+                <th>Quarta</th>
+                <th>Quinta</th>
+                <th>Sexta</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:50/9:40</td>
+                <td>Cíntia</td>
+                <td>Patrícia</td>
+                <td>Geovânia</td>
+                <td>Patrícia</td>
+                <td>Patrícia</td>
+            </tr>
+            <tr>
+                <td>9:40/10:30</td>
+                <td>Cíntia</td>
+                <td>Patrícia</td>
+                <td>Geovânia</td>
+                <td>Patrícia</td>
+                <td>Patrícia</td>
+            </tr>
+            <tr>
+                <td>10:30/11:20</td>
+                <td>Cíntia</td>
+                <td>Patrícia</td>
+                <td>Geovânia</td>
+                <td>Patrícia</td>
+                <td>Patrícia</td>
+            </tr>
+            <tr>
+                <td>11:20/12:10</td>
+                <td>Cíntia</td>
+                <td>Patrícia</td>
+                <td>Geovânia</td>
+                <td>Patrícia</td>
+                <td>Patrícia</td>
+            </tr>
+            <tr>
+                <td>12:10/13:00</td>
+                <td>Cíntia</td>
+                <td></td>
+                <td>Geovânia</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>13:00/13:50</td>
+                <td>Cíntia</td>
+                <td></td>
+                <td>Geovânia</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>13:50/14:40</td>
+                <td>Cíntia</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>14:40/15:30</td>
+                <td>Cíntia</td>
+                <td></td>
+                <td></td>
+                <td>Marília</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>15:30/16:20</td>
+                <td></td>
+                <td>Geovânia</td>
+                <td>Marília</td>
+                <td>Marília</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>16:20/17:10</td>
+                <td></td>
+                <td>Geovânia</td>
+                <td>Marília</td>
+                <td>Marília</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>17:10/18:00</td>
+                <td></td>
+                <td>Geovânia</td>
+                <td>Marília</td>
+                <td>Marília</td>
+                <td>Cíntia</td>
+            </tr>
+            <tr>
+                <td>18:00/18:50</td>
+                <td></td>
+                <td>Geovânia</td>
+                <td>Marília</td>
+                <td>Marília</td>
+                <td>Cíntia</td>
+            </tr>
+            <tr>
+                <td>18:50/19:40</td>
+                <td></td>
+                <td>Geovânia</td>
+                <td>Marília</td>
+                <td>Marília</td>
+                <td>Cíntia</td>
+            </tr>
+            <tr>
+                <td>19:40/20:30</td>
+                <td></td>
+                <td>Geovânia</td>
+                <td>Marília</td>
+                <td>Marília</td>
+                <td>Cíntia</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!--TESTANDO AQUI O NOVO QUADRO -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro de Horários</title>
+    <style>
+        .schedule-container {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            display: none; /* Inicialmente invisível */
+        }
+
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .schedule-table th, .schedule-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .schedule-table th {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+
+        .show-button {
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .show-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Botão para exibir/ocultar -->
+        <button class="show-button" onclick="toggleSchedule()">Mostrar Quadro de Horários</button>
+    </div>
+
+    <!-- Quadro de horários de Português -->
+    <div class="schedule-container" id="portuguesSchedule">
+        <h2>Quadro de Horários - Português</h2>
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>Horário</th>
+                    <th>Segunda</th>
+                    <th>Terça</th>
+                    <th>Quarta</th>
+                    <th>Quinta</th>
+                    <th>Sexta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:50/9:40</td>
+                    <td>Cíntia</td>
+                    <td>Patrícia</td>
+                    <td>Geovânia</td>
+                    <td>Patrícia</td>
+                    <td>Patrícia</td>
+                </tr>
+                <tr>
+                    <td>9:40/10:30</td>
+                    <td>Cíntia</td>
+                    <td>Patrícia</td>
+                    <td>Geovânia</td>
+                    <td>Patrícia</td>
+                    <td>Patrícia</td>
+                </tr>
+                <!-- Continue com as demais linhas -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function toggleSchedule() {
+            const schedule = document.getElementById('portuguesSchedule');
+            if (schedule.style.display === 'none' || schedule.style.display === '') {
+                schedule.style.display = 'block'; // Mostra o quadro
+            } else {
+                schedule.style.display = 'none'; // Oculta o quadro
+            }
+        }
+    </script>
+</body>
+</html>
+
+
     <footer>
         <!-- Rodapé do site -->
         <footer>
@@ -406,138 +647,6 @@ footer {
             <img src="imagens/whatsapp.png" alt="WhatsApp">
         </a>
     </div>
-    <!--novo quadro de horario -->
-
-    <div class="schedule-container">
-        <h2>Quadro de Horários</h2>
-        <table class="schedule-table">
-            <thead>
-                <tr>
-                    <th>Horário</th>
-                    <th>Segunda</th>
-                    <th>Terça</th>
-                    <th>Quarta</th>
-                    <th>Quinta</th>
-                    <th>Sexta</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>8:50/9:40</td>
-                    <td>Cíntia</td>
-                    <td>Patrícia</td>
-                    <td>Geovânia</td>
-                    <td>Patrícia</td>
-                    <td>Patrícia</td>
-                </tr>
-                <tr>
-                    <td>9:40/10:30</td>
-                    <td>Cíntia</td>
-                    <td>Patrícia</td>
-                    <td>Geovânia</td>
-                    <td>Patrícia</td>
-                    <td>Patrícia</td>
-                </tr>
-                <tr>
-                    <td>10:30/11:20</td>
-                    <td>Cíntia</td>
-                    <td>Patrícia</td>
-                    <td>Geovânia</td>
-                    <td>Patrícia</td>
-                    <td>Patrícia</td>
-                </tr>
-                <tr>
-                    <td>11:20/12:10</td>
-                    <td>Cíntia</td>
-                    <td>Patrícia</td>
-                    <td>Geovânia</td>
-                    <td>Patrícia</td>
-                    <td>Patrícia</td>
-                </tr>
-                <tr>
-                    <td>12:10/13:00</td>
-                    <td>Cíntia</td>
-                    <td></td>
-                    <td>Geovânia</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>13:00/13:50</td>
-                    <td>Cíntia</td>
-                    <td></td>
-                    <td>Geovânia</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>13:50/14:40</td>
-                    <td>Cíntia</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>14:40/15:30</td>
-                    <td>Cíntia</td>
-                    <td></td>
-                    <td></td>
-                    <td>Marília</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>15:30/16:20</td>
-                    <td></td>
-                    <td>Geovânia</td>
-                    <td>Marília</td>
-                    <td>Marília</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>16:20/17:10</td>
-                    <td></td>
-                    <td>Geovânia</td>
-                    <td>Marília</td>
-                    <td>Marília</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>17:10/18:00</td>
-                    <td></td>
-                    <td>Geovânia</td>
-                    <td>Marília</td>
-                    <td>Marília</td>
-                    <td>Cíntia</td>
-                </tr>
-                <tr>
-                    <td>18:00/18:50</td>
-                    <td></td>
-                    <td>Geovânia</td>
-                    <td>Marília</td>
-                    <td>Marília</td>
-                    <td>Cíntia</td>
-                </tr>
-                <tr>
-                    <td>18:50/19:40</td>
-                    <td></td>
-                    <td>Geovânia</td>
-                    <td>Marília</td>
-                    <td>Marília</td>
-                    <td>Cíntia</td>
-                </tr>
-                <tr>
-                    <td>19:40/20:30</td>
-                    <td></td>
-                    <td>Geovânia</td>
-                    <td>Marília</td>
-                    <td>Marília</td>
-                    <td>Cíntia</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    
 </body>
 </html>
 
